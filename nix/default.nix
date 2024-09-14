@@ -2,23 +2,22 @@
   lib,
   stdenv,
   nixpkgs,
-  fetchurl,
 }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "bibata-modern-classic-hyprcursor";
-  version = "0.1";
+  version = "0.2";
   src = nixpkgs.fetchFromGitHub {
     owner = "javigomezo";
     repo = "bibata-modern-classic-hyprcursor";
-    rev = "v0.1";
+    rev = "v0.2";
     sha256 = "sha256-xVYRmth/pS4UTMVr7+5YYL5eNn70UhvHQgvwMcotsms=";
   };
 
   installPhase = ''
     runHook preInstall
 
-    mkdir -p $out/share/icons/rose-pine-hyprcursor
-    cp -R . $out/share/icons/rose-pine-hyprcursor/
+    mkdir -p $out/share/icons/bibata-modern-classic-hyprcursor
+    cp -R . $out/share/icons/bibata-modern-classic-hyprcursor/
 
     runHook postInstall
   '';
