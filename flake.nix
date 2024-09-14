@@ -12,6 +12,8 @@
   };
 
   outputs = {
+    self,
+    hyprlang,
     nixpkgs,
     utils,
   }:
