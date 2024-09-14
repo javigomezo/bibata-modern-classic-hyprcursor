@@ -10,7 +10,7 @@ stdenv.mkDerivation (finalAttrs: {
     owner = "javigomezo";
     repo = "bibata-modern-classic-hyprcursor";
     rev = "v0.3";
-    sha256 = "";
+    sha256 = "sha256-L1rhKWga8ZMSY2LeUxqnn5VEqi0zooZhjS6r+5VrJd8=";
   };
 
   installPhase = ''
