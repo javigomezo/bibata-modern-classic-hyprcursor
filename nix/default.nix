@@ -8,7 +8,7 @@ stdenv.mkDerivation (finalAttrs: {
   version = "0.3";
   src = nixpkgs.fetchurl {
     url = "https://github.com/javigomezo/bibata-modern-classic-hyprcursor/releases/download/v0.3/bibata-modern-classic-hyprcursor_0.3.tar.gz";
-    sha256 = "";
+    sha256 = "sha256-17Ad29NUOGOKOCMZBx1OliJ6kvuM9mRUWNp50p9fb9A=";
   };
 
   installPhase = ''
