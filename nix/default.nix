@@ -5,19 +5,19 @@
 }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "bibata-modern-classic-hyprcursor";
-  version = "0.2";
+  version = "0.3";
   src = nixpkgs.fetchFromGitHub {
     owner = "javigomezo";
     repo = "bibata-modern-classic-hyprcursor";
-    rev = "v0.2";
-    sha256 = "sha256-Kj5gaVuykKB47c07CjWJog+Gv7VbWIkjzcKohVdw2sw=";
+    rev = "v0.3";
+    sha256 = "";
   };
 
   installPhase = ''
     runHook preInstall
 
     mkdir -p $out/share/icons/bibata-modern-classic-hyprcursor
-    cp -R hyprcursors manifest.hl $out/share/icons/bibata-modern-classic-hyprcursor/
+    cp -R . $out/share/icons/bibata-modern-classic-hyprcursor/
 
     runHook postInstall
   '';
