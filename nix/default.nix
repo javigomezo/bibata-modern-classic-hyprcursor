@@ -17,7 +17,7 @@ stdenv.mkDerivation (finalAttrs: {
     runHook preInstall
 
     mkdir -p $out/share/icons/bibata-modern-classic-hyprcursor
-    cp -R . $out/share/icons/bibata-modern-classic-hyprcursor/
+    cp -R hyprcursors manifest.hl $out/share/icons/bibata-modern-classic-hyprcursor/
 
     runHook postInstall
   '';
